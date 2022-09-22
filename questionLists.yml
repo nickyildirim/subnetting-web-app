@@ -1,0 +1,23 @@
+Questions:
+  Kinds:
+    1: How many avaliable host addresses in the network {{networkAddress}}
+    2: What is the broadcast address of the network {{networkAddress}}? #Done
+    3: What is the last valid host on the subnetwork {{hostAddress}}? #Done
+    4: What is the first valid host on the subnetwork that the node {{hostAddress}} belongs to? #Done
+    6: What valid host range is the IP address {{hostAddress}} a part of? #Done
+  
+
+    # Examples:
+
+    # 1: You are designing a subnet mask for the 192.168.213.0 network. You want 22 subnets with up to 5 hosts on each subnet. What subnet mask should you use?
+    # 2: What is the broadcast address of the network 172.27.112.0/20?
+    # 3: What is the last valid host on the subnetwork 172.20.127.128/27?
+    # 4: What is the first valid host on the subnetwork that the node 172.20.193.211/23 belongs to?
+    # 5: How many subnets and hosts per subnet can you get from the network 10.0.0.0/20?
+    # 6: What valid host range is the IP address 172.18.137.220/28 a part of?
+
+
+
+
+
+
