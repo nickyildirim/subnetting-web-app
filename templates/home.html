@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subnetting Questions</title>
+    <meta name="description" content="A starter example with all elements and components used in Pico design system. Built with Pico CSS.">
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+  </head>
+
+  <body>
+   
+    <!-- Main -->
+    <main class="container">
+
+      <!-- Article-->
+      <article id="article">
+        <h2>Question:</h2>
+        <p>{{question}}</p>
+        <footer>     <!-- Accordions -->
+          <section id="accordions">
+            <h2>Result:</h2>
+            <details>
+              <summary>Correct Answer</summary>
+              <p>{{answer}}</p>
+            </details>
+            <details>
+              <summary>Explanation</summary>
+              <ul>
+                <p>Coming Soon...</p>
+              </ul>
+            </details>
+          </section><!-- ./ Accordions --></footer>
+        <button class="contrast" data-target="modal-example" onclick="window.location='http://127.0.0.1:5005/'">Next Question</button>
+      </article><!-- ./ Article-->
+
+    </main><!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small><center><a href="https://www.buymeacoffee.com/nyildirim">Buy me a coffee ☕</a> • Built with <a href="https://picocss.com">Pico</a> & <a href="https://flask.palletsprojects.com">Flask</a> • <a href="https://www.nickyildirim.com/">My Blog</a></small></center>
+    </footer><!-- ./ Footer -->
+
+  </body>
+
+</html>
