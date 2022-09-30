@@ -11,10 +11,10 @@ app = Flask(__name__)
 
 def question():
 
-    with open(r'questionLists.yml') as file:
+    with open(r'questionlists.yml') as file:
 
         questionNumber = randint(4, 4)
-        questionList = yaml.full_load(file)
+        questionlist = yaml.full_load(file)
         randomIpAddr = ipaddress.ip_interface(random_ipv4())
 
         dataRandomizer = {
@@ -31,4 +31,4 @@ def question():
     return render_template('home.html', question = question, answer = answer)
 
 if __name__ == '__main__':
-   app.run()
+   app.run(host='0.0.0.0")
