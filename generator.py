@@ -46,14 +46,5 @@ def main(questionKind, random_ipv4):
         return numberSubnet(random_ipv4)
 
 
-
-
-if __name__ == '__main__':
-    main(random_ipv4)
-
-
-
-
-
  
 
