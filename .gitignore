@@ -1,5 +1,7 @@
 # Distribution and Packaing
 
+__pycache__/
+include/
 venv/
 bin/
 lib/
