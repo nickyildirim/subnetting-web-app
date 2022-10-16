@@ -1,1 +1,9 @@
+# Distribution and Packaing
+
 venv/
+bin/
+lib/
+lib64
+pyenv.cfg
+*.cfg
+*.pyc
