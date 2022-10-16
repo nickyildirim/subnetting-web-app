@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 def question():
 
-    with open(r'questionlists.yml') as file:
+    with open(r'questionlist.yml') as file:
 
         questionNumber = randint(4, 4)
         questionlist = yaml.full_load(file)
@@ -21,7 +21,7 @@ def question():
             "hostAddress": randomIpAddr,
         }
 
-        j2_template = Template(questionList['Questions']['Kinds'][questionNumber])        
+        j2_template = Template(questionlist['Questions']['Kinds'][questionNumber])        
         question = j2_template.render(dataRandomizer)
 
         
@@ -31,4 +31,4 @@ def question():
     return render_template('home.html', question = question, answer = answer)
 
 if __name__ == '__main__':
-   app.run(host='0.0.0.0")
+   app.run(host="0.0.0.0")
