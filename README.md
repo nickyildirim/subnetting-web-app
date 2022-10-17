@@ -1,12 +1,29 @@
 ## Subnetting Flask Web App
-Simple question generator web app for subnetting practices 
 
-### Required libraries
-`pip3 install Flask gunicorn Jinja2`
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+Simple question generator web app for subnetting practices. Each question gets randomized parameter which brings unlimited amount of questions to practice subnetting. 
 
-### To run the app
+### To run the app:
+
+1 - Create your python env:
+
+`python3 -m venv subnetting-app`
+
+2 - Install required modules
+
+`pip install -r requirements.txt`
+
+3 - Run gunicorn to serve the http:
+
 `gunicorn3 --bind 0.0.0.0:8000 wsgi:app --daemon`
 
-### Site can be viewed at:
-
+### Example Site:
 [practice-subnetting.com](https://practice-subnetting.com)
+
+
+### Future Action Items:
+
+- Finish explanation part for each question kind.
+- Increase the number of question kind to 6.
+
