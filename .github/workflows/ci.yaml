@@ -15,5 +15,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "*"
+        source: "generator.py,questionlist.yml,subapp.py,wsgi.py,templates/home.html"
         target: "/opt/build/"
