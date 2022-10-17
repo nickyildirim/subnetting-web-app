@@ -5,11 +5,3 @@ Questions:
     3: What is the last valid host on the subnetwork {{hostAddress}}? 
     4: What is the first valid host on the subnetwork that the node {{hostAddress}} belongs to? 
     6: What valid host range is the IP address {{hostAddress}} a part of? 
-  
-
-
-
-
-
-
-
