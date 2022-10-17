@@ -1,7 +1,8 @@
 ## Subnetting Flask Web App
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+
+
 Simple question generator web app for subnetting practices. Each question gets randomized parameter which brings unlimited amount of questions to practice subnetting. 
 
 ### To run the app:
