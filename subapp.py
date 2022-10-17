@@ -1,7 +1,6 @@
 """
-This is the main flask route module where its function defined along 
+This is the main flask route module where its function defined along
 with its route. The logic is defined under the question function.
-
 """
 
 from random import randint
@@ -15,12 +14,9 @@ app = Flask(__name__)
 @app.route("/")
 
 def question() :
-
     """
-    
     This generates a random parameter for the question and renders it with
     the yaml file under questionlist then serves the question with its answer.
-
     """
 
     with open(r'questionlist.yml', encoding="utf-8") as file:
