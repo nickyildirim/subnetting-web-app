@@ -21,7 +21,7 @@ def question() :
 
     with open(r'questionlist.yml', encoding="utf-8") as file:
 
-        q_number = randint(2, 2)
+        q_number = randint(1, 7)
         q_list = yaml.full_load(file)
         random_ip_addr = ipaddress.ip_interface(random_ipv4())
         random_net_addr = ipaddress.ip_network(random_ipv4(), strict=False)
