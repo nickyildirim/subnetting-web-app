@@ -35,17 +35,20 @@ def last_ip(ip_addr):
 
 def brodcast_ip(ip_addr):
     """
-    Returns  last avaliable ipv4 host address
+    Returns brodcast address
     """
     net = ipaddress.ip_network(ip_addr, strict=False)
     return net[-1]
 
 def number_host(ip_addr):
+    """
+    Returns avaliable number of hosts of the network
+    """
     return 2**(32 - int(str(ip_addr).partition('/')[-1])) - 2
 
 def max_subnet(ip_addr):
     """
-    Returns number of avaliable subnets
+    Returns max number of avaliable subnets
     """
     return 2**(32 - int(str(ip_addr).partition('/')[-1])) / 2
 
@@ -63,9 +66,9 @@ def q_maker(question_kind, random_ip, random_net, *args, **kwargs):
     """
 
     if question_kind == 1:
-        return number_host(random_net) 
+        return number_host(random_net)
     if question_kind == 2:
-        return brodcast_ip(random_net) 
+        return brodcast_ip(random_net)
     if question_kind == 3:
         return last_ip(random_ip)
     if question_kind == 4:
@@ -76,5 +79,3 @@ def q_maker(question_kind, random_ip, random_net, *args, **kwargs):
         return max_subnet(random_ip)
     if question_kind == 7:
         return max_host(random_ip)
-
-
