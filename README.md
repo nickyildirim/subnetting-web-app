@@ -1,7 +1,8 @@
 ## Subnetting Flask Web App
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-![example workflow](https://github.com/nickyildirim/subnetting-web-app/actions/workflows/linter.yaml/badge.svg)
+![linter workflow](https://github.com/nickyildirim/subnetting-web-app/actions/workflows/linter.yaml/badge.svg)
+![ci workflow](https://github.com/nickyildirim/subnetting-web-app/actions/workflows/ci.yaml/badge.svg)
 
 Simple question generator web app for subnetting practices. Each question gets randomized parameter which brings unlimited amount of questions to practice subnetting. 
 
