@@ -57,7 +57,7 @@ def max_host(ip_addr):
     """
     Returns number of avaliable subnets
     """
-    return (2**(32 - int(str(ip_addr).partition('/')[-1])) / 2) - 2
+    return ((2**(32 - int(str(ip_addr).partition('/')[-1]))) / 2) - 2
 
 def q_maker(question_kind, random_ip, random_net, *args, **kwargs):
     """
