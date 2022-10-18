@@ -31,9 +31,10 @@ def question() :
             "networkAddress": random_net_addr
         }
 
-        j2_template = Template(q_list['Questions'][q_number])    
+        j2_template = Template(q_list['Questions'][q_number])
         renderred_question = j2_template.render(q_parameters)
-        answer = q_maker(question_kind=q_number, random_ip=random_ip_addr, random_net=random_net_addr)
+        answer = q_maker(question_kind=q_number, random_ip=random_ip_addr,
+        random_net=random_net_addr)
 
     return render_template('home.html', question = renderred_question, answer = answer)
 
