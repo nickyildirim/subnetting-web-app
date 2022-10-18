@@ -13,7 +13,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: |
+        script: sudo sh /opt/deploy.sh
           
-          sudo -S ./opt/deploy.sh
-          ${{ secrets.PASSWORD }}
+          
+         
