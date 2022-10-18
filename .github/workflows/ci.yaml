@@ -15,5 +15,5 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           
-          sudo ./opt/deploy.sh
+          sudo -S ./opt/deploy.sh
           ${{ secrets.PASSWORD }}
