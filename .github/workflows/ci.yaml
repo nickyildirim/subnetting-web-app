@@ -13,4 +13,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: cd /opt; echo ${{ secrets.PASSWORD }} | ./deploy.sh
+        script: cd /opt; echo ${{ secrets.PASSWORD }} | sudo ./deploy.sh
