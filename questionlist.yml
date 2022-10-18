@@ -5,3 +5,4 @@ Questions:
   4: What is the first valid host on the subnetwork that the node {{hostAddress}} belongs to? 
   5: What valid host range is the IP address {{hostAddress}} a part of? 
   6: What's the maximum amount of subnets network {{networkAddress}} can get?
+  7: How many avaliable host can fit on the biggest subnet of the network {{networkAddress}}?
