@@ -26,6 +26,7 @@ Simple question generator web app for subnetting practices. Each question gets r
 
 ### Future Action Items:
 
+- ~~Increase the number of question kind to 6.~~
 - Finish explanation part for each question kind.
-- Increase the number of question kind to 6.
+- Include IPv6 questions. 
 
