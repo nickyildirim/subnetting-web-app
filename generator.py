@@ -44,7 +44,7 @@ def number_host(ip_addr):
     """
     Returns avaliable number of hosts of the network
     """
-    return int(2**(32 - int(ip_addr.partition('/')[-1])) - 2)
+    return int(2**(32 - int(str(ip_addr).partition('/')[-1])) - 2)
 
 def max_subnet(ip_addr):
     """
