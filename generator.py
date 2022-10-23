@@ -44,20 +44,20 @@ def number_host(ip_addr):
     """
     Returns avaliable number of hosts of the network
     """
-    return (2**(32 - int(str(ip_addr).partition('/')[-1]))) - 2
+    return int(2**(32 - int(ip_addr.partition('/')[-1])) - 2)
 
 def max_subnet(ip_addr):
     """
     Returns max number of avaliable subnets
     """
-    return (2**(32 - int(str(ip_addr).partition('/')[-1]))) / 2
+    return int(2**(32 - int(ip_addr.partition('/')[-1])) / 2)
 
 
 def max_host(ip_addr):
     """
     Returns number of avaliable subnets
     """
-    return ((2**(32 - int(str(ip_addr).partition('/')[-1]))) / 2) - 2
+    return int(2**(32 - float(int(str(ip_addr).partition('/')[-1]))) / 2 - 2)
 
 def q_maker(question_kind, random_ip, random_net, *args, **kwargs):
     """
@@ -76,6 +76,6 @@ def q_maker(question_kind, random_ip, random_net, *args, **kwargs):
     if question_kind == 5:
         return f'{first_ip(random_ip)} - {last_ip(random_ip)}'
     if question_kind == 6:
-        return max_subnet(random_ip)
+        return max_subnet(random_net)
     if question_kind == 7:
-        return max_host(random_ip)
+        return max_host(random_net)
