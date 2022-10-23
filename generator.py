@@ -50,14 +50,14 @@ def max_subnet(ip_addr):
     """
     Returns max number of avaliable subnets
     """
-    return int(2**(32 - int(ip_addr.partition('/')[-1])) / 2)
+    return int(2**(32 - int(str(ip_addr.partition('/')[-1]))) / 2)
 
 
 def max_host(ip_addr):
     """
     Returns number of avaliable subnets
     """
-    return int(2**(32 - float(int(str(ip_addr).partition('/')[-1]))) / 2 - 2)
+    return int(2**(32 - int(str(ip_addr).partition('/')[-1])) / 2 - 2)
 
 def q_maker(question_kind, random_ip, random_net, *args, **kwargs):
     """
