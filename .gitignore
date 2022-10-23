@@ -10,3 +10,4 @@ pyenv.cfg
 *.cfg
 *.pyc
 .vscode/
+test.py
